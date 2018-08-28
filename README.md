@@ -1,15 +1,12 @@
-## Performance tools I/O
+# Multi-platform robust I/O
+An extra layer of filesystem-portability, robustness and convenience for selected I/O operations.
 
-This module defines extra I/O mechanisms.
+## Releasing
+Versioning, releasing and distribution are managed by the [gradle-release] plugin.
+See the [changelog](CHANGELOG.md).
 
-### Version and release management
-This module uses [gradle-release](https://bitbucket.org/atlassian/gradle-release/src/master/) plugin help with 
-version and release management. 
-Please refer to [plugin docs](https://bitbucket.org/atlassian/gradle-release/src/release-0.0.2/README.md) for more information.
+[gradle-release]: https://bitbucket.org/atlassian/gradle-release/src/release-0.3.0/README.md
 
-
-##License
+## License
 Copyright (c) 2018 Atlassian and others.
 Apache 2.0 licensed, see [LICENSE.txt](LICENSE.txt) file.
-
-
