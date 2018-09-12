@@ -18,6 +18,9 @@ The API consists of all public Kotlin types from `com.atlassian.performance.tool
 ## [Unreleased]
 [Unreleased]: https://bitbucket.org/atlassian/workspace/branches/compare/master%0Drelease-1.0.0
 
+### Added
+- Dereference system properties pointing to files.
+
 ## [1.0.0] - 2018-08-28
 [1.0.0]: https://bitbucket.org/atlassian/io/branches/compare/release-1.0.0%0Drelease-0.0.1
 
