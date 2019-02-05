@@ -20,6 +20,16 @@ class DirectoriesKtTest {
         assertThat(deepPath).hasContent("some data")
     }
 
+    @Test
+    fun shouldCopyTwice() {
+        val target = Files.createTempFile("repeated-copy-test", ".txt")
+
+        streamData("first").copy(target)
+        streamData("second").copy(target)
+
+        assertThat(target).hasContent("second")
+    }
+
     private fun streamData(
         data: String
     ): InputStream = ByteArrayInputStream(data.toByteArray())
