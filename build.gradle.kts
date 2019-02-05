@@ -15,6 +15,7 @@ configurations.all {
 dependencies {
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlinVersion")
     testCompile("junit:junit:4.12")
+    testCompile("org.assertj:assertj-core:3.11.1")
 }
 
 tasks.wrapper {
