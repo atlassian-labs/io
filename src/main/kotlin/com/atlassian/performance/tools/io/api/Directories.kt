@@ -56,12 +56,12 @@ fun File.directories(): List<File> = listFiles { file -> file.isDirectory }
     ?: throw Exception("Cannot list directories from $this")
 
 /**
- * Copy the contents of [this] to [target], even if [target] doesn't exist yet.
+ * Copy the contents of [this] to [target], regardless of [target]'s existence.
  */
 fun InputStream.copy(
     target: Path
 ): Path {
-    target.toFile().ensureDirectory()
+    target.toFile().ensureParentDirectory()
     Files.copy(this, target, StandardCopyOption.REPLACE_EXISTING)
     return target
 }

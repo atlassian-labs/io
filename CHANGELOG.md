@@ -18,8 +18,13 @@ The API consists of all public Kotlin types from `com.atlassian.performance.tool
 ## [Unreleased]
 [Unreleased]: https://bitbucket.org/atlassian/io/branches/compare/master%0Drelease-1.1.0
 
+### Added
+- Copy a stream to a path, regardless of the path's existence. Resolve [JPERF-389].
+
 ### Fixed
 - Stop using the deprecated JRE Kotlin stdlib.
+
+[JPERF-382]: https://ecosystem.atlassian.net/browse/JPERF-389
 
 ## [1.1.0] - 2018-09-12
 [1.1.0]: https://bitbucket.org/atlassian/io/branches/compare/release-1.1.0%0Drelease-1.0.0
